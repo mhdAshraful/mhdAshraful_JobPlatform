@@ -2,6 +2,7 @@ import Banner from "@/components/Bannersection/Banner";
 import CategorySection from "@/components/CategorySection/CategorySection";
 import CompanySection from "@/components/CompanySection/CompanySection";
 import FeaturedJobs from "@/components/FeaturedSection/FeaturedJobs";
+import Footer from "@/components/Footer/Footer";
 import LatestOpenJobs from "@/components/LatestJobSection/LatestOpenJobs";
 import Navbar from "@/components/Navbar";
 
@@ -15,6 +16,7 @@ export default function Home() {
 				<CategorySection />
 				<FeaturedJobs />
 				<LatestOpenJobs />
+				<Footer />
 			</main>
 		</div>
 	);

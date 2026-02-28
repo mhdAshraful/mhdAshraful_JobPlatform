@@ -17,43 +17,56 @@ import { Button } from "../ui/button";
 
 function Search() {
 	return (
-		<div className="flex flex-col items-start w-full p-4 mb-10 gap-2">
-			<InputGroup className="h-12 w-full border-none shadow-none">
-				<InputGroupInput placeholder="Job title or keyword" />
-				<InputGroupAddon>
-					<Image src="/search.svg" alt="search" width={20} height={20} />
-				</InputGroupAddon>
-			</InputGroup>
-			<Select>
-				<SelectTrigger className="flex items-start text-start h-12 w-full border-none shadow-none">
-					<Image src="/location.svg" alt="search" width={20} height={20} />
-					<SelectValue
-						className="text-start"
-						placeholder="Choose a Location"
-					/>
-				</SelectTrigger>
-				<SelectContent>
-					<SelectGroup>
-						<SelectItem value="dhaka">Dhaka</SelectItem>
-						<SelectItem value="new-york">New York</SelectItem>
-						<SelectItem value="london">London</SelectItem>
-						<SelectItem value="paris">Paris</SelectItem>
-						<SelectItem value="tokyo">Tokyo</SelectItem>
-					</SelectGroup>
-				</SelectContent>
-			</Select>
+		<>
+			<div className="flex flex-col w-full p-4 mb-10 gap-2 md:flex-row md:w-[70%] md:items-start md:bg-white md:z-10 items-start ">
+				<InputGroup className="h-12 w-full md:w-[30%] border-none shadow-none">
+					<InputGroupInput placeholder="Job title or keyword" />
+					<InputGroupAddon>
+						<Image
+							src="/search.svg"
+							alt="search"
+							width={20}
+							height={20}
+						/>
+					</InputGroupAddon>
+				</InputGroup>
+				<Select>
+					<SelectTrigger className="flex items-start text-start h-12 w-full md:w-[30%] border-none shadow-none">
+						<Image
+							src="/location.svg"
+							alt="search"
+							width={20}
+							height={20}
+						/>
+						<SelectValue
+							className="text-start"
+							placeholder="Choose a Location"
+						/>
+					</SelectTrigger>
+					<SelectContent className="w-full">
+						<SelectGroup>
+							<SelectItem value="dhaka">Dhaka</SelectItem>
+							<SelectItem value="new-york">New York</SelectItem>
+							<SelectItem value="london">London</SelectItem>
+							<SelectItem value="paris">Paris</SelectItem>
+							<SelectItem value="tokyo">Tokyo</SelectItem>
+						</SelectGroup>
+					</SelectContent>
+				</Select>
 
-			<Button className="bg-brand text-white text-md font-bold h-12 w-full sm:w-auto border-none rounded-none shadow-none">
-				Search my Job
-			</Button>
-
-			<div>
-				<p className="text-sm text-muted-foreground">Popular:</p>
-				<p className="text-sm text-muted-foreground">
-					UI Designer, UX Researcher, Android, Admin, React, Next.js
-				</p>
+				<Button className="bg-brand text-white text-md font-bold h-12 w-full md:w-[30%] sm:w-auto border-none rounded-none shadow-none">
+					Search my Job
+				</Button>
 			</div>
-		</div>
+			<div>
+				<div>
+					<p className="text-sm text-muted-foreground">Popular:</p>
+					<p className="text-sm text-muted-foreground">
+						UI Designer, UX Researcher, Android, Admin, React, Next.js
+					</p>
+				</div>
+			</div>
+		</>
 	);
 }
 

@@ -6,12 +6,12 @@ import { cn } from "@/lib/utils";
 
 function FeaturedJobs() {
 	return (
-		<div className="w-screen flex flex-col gap-2 p-4">
+		<div className="w-screen flex flex-col gap-2 p-4 md:p-10 lg:px-32 lg:py-18">
 			<h2 className="text-[32px] font-semibold text-headings text-start text-base/13 font-clash">
 				Featured <span className="text-accent">Jobs</span>
 			</h2>
 			<div className="relative">
-				<ScrollArea className="h-65 w-75 ">
+				<ScrollArea className="h-65 w-full ">
 					<div className="flex w-max space-x-4">
 						{featJobs.map((job) => (
 							<div key={job.id} className="w-74 h-65 border p-4">

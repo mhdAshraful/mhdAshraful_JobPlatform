@@ -4,15 +4,15 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 function LatestOpenJobs() {
 	return (
-		<div className="w-full flex flex-col gap-4 p-4">
+		<div className="w-full flex flex-col gap-4 p-4 md:p-10 lg:px-32 lg:py-18">
 			<h2 className="text-[32px] font-semibold text-headings text-start text-base/13 font-clash">
 				Latest <span className="text-accent">Jobs open</span>
 			</h2>
-			<div>
+			<div className="w-full md:flex md:flex-row md:flex-wrap md:gap-6">
 				{latestOpenJobs.map((job) => (
 					<div
 						key={job.id}
-						className=" flex flex-col items-start gap-2 bg-white   mb-4 p-4"
+						className=" flex flex-col items-start gap-2 bg-white   mb-4 p-4 md:basis-3/7"
 					>
 						<Image
 							src={job.logo}

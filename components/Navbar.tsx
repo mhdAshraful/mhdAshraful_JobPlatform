@@ -13,25 +13,31 @@ function Navbar() {
 	};
 
 	return (
-		<div className="w-full h-15 flex items-center justify-between p-4">
-			<div className="">
-				<Link href="/">
-					<Image
-						src="/logo.svg"
-						alt="Logo"
-						width={152}
-						height={60}
-						loading="eager"
-					/>
-				</Link>
-			</div>
+		<div className="w-full h-15 flex items-center justify-between gap-10 p-4 md:px-10 lg:px-32">
+			<Link href="/">
+				<Image
+					src="/logo.svg"
+					alt="Logo"
+					width={152}
+					height={60}
+					loading="eager"
+				/>
+			</Link>
 
 			{device === "desktop" && (
-				<div className="flex items-center gap-4">
+				<div className="flex flex-row items-center justify-between w-full">
 					<div className="flex items-center gap-4">
-						<Link href="/">Home</Link>
-						<Link href="/about">About</Link>
-						<Link href="/contact">Contact</Link>
+						<Link href="/findJobs">Find Jobs</Link>
+						<Link href="/search_companies">Browse Companies</Link>
+					</div>
+					<div className="flex items-center gap-4">
+						<Link href="/login" className="text-brand">
+							Login
+						</Link>
+						{"|"}
+						<Link href="/signup" className="text-white bg-brand p-2">
+							signup
+						</Link>
 					</div>
 				</div>
 			)}
