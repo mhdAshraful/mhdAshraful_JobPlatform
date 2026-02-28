@@ -17,7 +17,7 @@ import { Button } from "../ui/button";
 
 function Search() {
 	return (
-		<div className="flex flex-col items-start w-full h-86 gap-2">
+		<div className="flex flex-col items-start w-full mb-20 gap-2">
 			<InputGroup className="h-12 w-full border-none shadow-none">
 				<InputGroupInput placeholder="Job title or keyword" />
 				<InputGroupAddon>

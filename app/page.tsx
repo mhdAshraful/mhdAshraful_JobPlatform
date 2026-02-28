@@ -1,6 +1,7 @@
 import Banner from "@/components/Bannersection/Banner";
 import CategorySection from "@/components/CategorySection/CategorySection";
 import CompanySection from "@/components/CompanySection/CompanySection";
+import FeaturedJobs from "@/components/FeaturedSection/FeaturedJobs";
 import Navbar from "@/components/Navbar";
 import { Cat } from "lucide-react";
 import Image from "next/image";
@@ -13,6 +14,7 @@ export default function Home() {
 				<Banner />
 				<CompanySection />
 				<CategorySection />
+				<FeaturedJobs />
 			</main>
 		</div>
 	);
