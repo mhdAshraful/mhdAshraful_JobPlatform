@@ -13,7 +13,7 @@ function Navbar() {
 	};
 
 	return (
-		<div className="w-full h-15 flex items-center justify-between">
+		<div className="w-full h-15 flex items-center justify-between p-4">
 			<div className="">
 				<Link href="/">
 					<Image
@@ -37,7 +37,7 @@ function Navbar() {
 			)}
 
 			{device !== "desktop" && (
-				<div className="flex items-center gap-4">
+				<div className="flex items-center gap-4 p-4">
 					<div className="" onClick={handleCkick}>
 						<Image
 							src="/burger.svg"

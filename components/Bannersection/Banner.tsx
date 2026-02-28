@@ -4,7 +4,7 @@ import Search from "./Search";
 
 function Banner() {
 	return (
-		<div className="flex flex-col py-4">
+		<div className="flex flex-col p-4">
 			<h1 className="text-[48px] font-semibold text-headings text-start text-base/13 font-clash">
 				Discover more than <span className="text-accent">5000+ Jobs</span>
 			</h1>

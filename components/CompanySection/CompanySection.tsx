@@ -3,11 +3,11 @@ import { companies } from "@/lib/data";
 import Image from "next/image";
 function CompanySection() {
 	return (
-		<div>
-			<h2 className="text-[32px] font-semibold text-muted-foreground  text-start text-base/13 font-clash">
+		<div className="flex flex-col p-4">
+			<h2 className="text-md font-medium text-muted-foreground  text-start text-base/13 font-clash">
 				Companies we helped grow
 			</h2>
-			<div className="flex flex-wrap gap-4 m-4">
+			<div className="flex flex-wrap gap-4 ">
 				{companies.map((company) => (
 					<div key={company.name} className="p-4 flex items-center">
 						<Image

@@ -3,13 +3,13 @@ import Image from "next/image";
 
 function CategorySection() {
 	return (
-		<div>
+		<div className="w-screen flex flex-col gap-4 p-4">
 			<h2 className="text-[32px] font-semibold text-headings text-start text-base/13 font-clash">
 				Explore by <span className="text-accent">category</span>
 			</h2>
-			<div className="flex flex-col gap-4 m-4">
+			<div className="flex flex-col gap-4 my-4">
 				{categories.map((category) => (
-					<div key={category.id} className="border p-4 flex ">
+					<div key={category.id} className="border p-4 flex items-start">
 						<Image
 							src={category.icon}
 							alt={`${category.title} icon`}
