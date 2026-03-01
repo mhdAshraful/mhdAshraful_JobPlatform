@@ -10,7 +10,7 @@ import Navbar from "@/components/Navbar";
 export default function Home() {
 	return (
 		<div className="flex min-h-screen items-center justify-center font-sans dark:bg-black">
-			<main className="flex min-h-screen w-full flex-col items-center py-2 bg-secondary dark:bg-black">
+			<main className="flex min-h-screen w-full flex-col items-center bg-white dark:bg-black">
 				<Navbar />
 				<Banner />
 				<CompanySection />

@@ -13,7 +13,7 @@ function Navbar() {
 	};
 
 	return (
-		<div className="w-full h-15 flex items-center justify-between gap-10 p-4 md:px-10 lg:px-32">
+		<div className="w-full h-15 flex bg-background items-center justify-between gap-10 p-4 md:px-10 lg:px-32">
 			<Link href="/">
 				<Image
 					src="/logo.svg"

@@ -7,7 +7,7 @@ import { useDeviceCheck } from "@/lib/deviceCheck";
 function Banner() {
 	const device = useDeviceCheck();
 	return (
-		<div className="w-screen md:h-screen flex flex-col gap-4 md:gap-10 p-4 md:p-10 lg:px-32 lg:py-18">
+		<div className="w-screen md:h-screen bg-background flex flex-col gap-4 md:gap-10 p-4 md:p-10 lg:px-32 lg:py-18">
 			{device === "desktop" && (
 				<Image
 					src="/bg.png"

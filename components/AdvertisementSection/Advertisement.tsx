@@ -3,9 +3,6 @@ import { Button } from "../ui/button";
 import Image from "next/image";
 
 function Advertisement() {
-	//  [clip-path:polygon(40px_0,100%_0,100%_calc(100%-40px),calc(100%-40px)_100%,0_100%,0_40px)]
-	// md:[clip-path:polygon(25px_0,100%_0,100%_calc(100%-25px),calc(100%-25px)_100%,0_100%,0_25px)]
-
 	return (
 		<div className="w-full h-auto flex flex-col items-start justify-between md:flex-row gap-10 p-4 md:p-10 lg:px-32 lg:py-18">
 			<div
