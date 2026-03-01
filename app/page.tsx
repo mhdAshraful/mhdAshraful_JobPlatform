@@ -1,3 +1,4 @@
+import Advertisement from "@/components/AdvertisementSection/Advertisement";
 import Banner from "@/components/Bannersection/Banner";
 import CategorySection from "@/components/CategorySection/CategorySection";
 import CompanySection from "@/components/CompanySection/CompanySection";
@@ -14,6 +15,7 @@ export default function Home() {
 				<Banner />
 				<CompanySection />
 				<CategorySection />
+				<Advertisement />
 				<FeaturedJobs />
 				<LatestOpenJobs />
 				<Footer />
